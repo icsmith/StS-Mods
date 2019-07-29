@@ -1,0 +1,10 @@
+{
+  "RoR_Engineer:AutoTurret": {
+    "NAME": "Auto Turret",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, deal #b",
+      " damage to 3 random enemies.",
+      " NL #yEvoke: Increase damage by #b"
+    ]
+  }
+}

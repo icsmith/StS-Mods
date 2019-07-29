@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import RoR_Engineer.RoR_Engineer;
-import RoR_Engineer.characters.TheDefault;
+import RoR_Engineer.characters.The_Engineer;
 import RoR_Engineer.powers.CommonPower;
 
 import static RoR_Engineer.RoR_Engineer.makeCardPath;
@@ -37,7 +37,7 @@ public class DefaultCommonPower extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = The_Engineer.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
     private static final int MAGIC = 1;

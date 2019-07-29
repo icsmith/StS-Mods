@@ -2,7 +2,7 @@ package RoR_Engineer.cards;
 
 import RoR_Engineer.RoR_Engineer;
 import RoR_Engineer.actions.GrenadeLauncherAction;
-import RoR_Engineer.characters.TheDefault;
+import RoR_Engineer.characters.The_Engineer;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -29,7 +29,7 @@ public class GrenadeLauncher extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.BASIC; //  Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;  //   since they don't change much.
     private static final CardType TYPE = CardType.ATTACK;       //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = The_Engineer.Enums.COLOR_GRAY;
 
     private static final int COST = -1;  // COST = X
     private static final int UPGRADED_COST = -1; // UPGRADED_COST = X

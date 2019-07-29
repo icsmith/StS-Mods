@@ -48,10 +48,15 @@
   },
   "RoR_Engineer:OrbSkill": {
     "NAME": "Construct Auto Turret",
-    "DESCRIPTION": "Channel 1 Auto Turret."
+    "DESCRIPTION": "Channel 1 Auto Turret.",
+    "UPGRADE_DESCRIPTION": "Channel 1 Auto Turret. NL Increase base damage by 1."
   },
   "RoR_Engineer:GrenadeLauncher": {
     "NAME": "Grenade Launcher",
     "DESCRIPTION": "Deal !D! damage to ALL enemies X times."
+  },
+  "RoR_Engineer:BubbleShield": {
+    "NAME": "Bubble Shield",
+    "DESCRIPTION": "Gain !B! block for 3 turns."
   }
 }

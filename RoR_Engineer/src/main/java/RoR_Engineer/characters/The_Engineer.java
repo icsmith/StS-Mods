@@ -30,13 +30,13 @@ import RoR_Engineer.relics.PlaceholderRelic2;
 import java.util.ArrayList;
 
 import static RoR_Engineer.RoR_Engineer.*;
-import static RoR_Engineer.characters.TheDefault.Enums.COLOR_GRAY;
+import static RoR_Engineer.characters.The_Engineer.Enums.COLOR_GRAY;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
 //All text (starting description and loadout, anything labeled TEXT[]) can be found in DefaultMod-character-Strings.json in the resources
 
-public class TheDefault extends CustomPlayer {
+public class The_Engineer extends CustomPlayer {
     public static final Logger logger = LogManager.getLogger(RoR_Engineer.class.getName());
 
     // =============== CHARACTER ENUMERATORS =================
@@ -99,7 +99,7 @@ public class TheDefault extends CustomPlayer {
 
     // =============== CHARACTER CLASS START =================
 
-    public TheDefault(String name, PlayerClass setClass) {
+    public The_Engineer(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
                 "RoR_EngineerResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
@@ -173,6 +173,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(OrbSkill.ID);
         //custom content under here
         retVal.add(GrenadeLauncher.ID);
+        retVal.add(BubbleShield.ID);
 
         return retVal;
     }
@@ -253,7 +254,7 @@ public class TheDefault extends CustomPlayer {
     // Should return a new instance of your character, sending name as its name parameter.
     @Override
     public AbstractPlayer newInstance() {
-        return new TheDefault(name, chosenClass);
+        return new The_Engineer(name, chosenClass);
     }
 
     // Should return a Color object to be used to color the miniature card images in run history.

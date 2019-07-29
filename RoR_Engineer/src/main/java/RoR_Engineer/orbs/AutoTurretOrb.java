@@ -8,7 +8,6 @@ import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
-import com.megacrit.cardcrawl.actions.unique.DamagePerAttackPlayedAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -17,7 +16,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.EchoPower;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import com.megacrit.cardcrawl.vfx.combat.DarkOrbActivateEffect;
 import com.megacrit.cardcrawl.vfx.combat.DarkOrbPassiveEffect;
@@ -27,7 +25,7 @@ import RoR_Engineer.util.TextureLoader;
 
 import static RoR_Engineer.RoR_Engineer.makeOrbPath;
 
-public class DefaultOrb extends AbstractOrb {
+public class AutoTurretOrb extends AbstractOrb {
 
     // Standard ID/Description
     public static final String ORB_ID = RoR_Engineer.makeID("AutoTurret");
@@ -42,7 +40,8 @@ public class DefaultOrb extends AbstractOrb {
     private static final float ORB_WAVY_DIST = 0.04f;
     private static final float PI_4 = 12.566371f;
 
-    public DefaultOrb() {
+    //Todo: Upgrade base damage with upgraded skill card
+    public AutoTurretOrb() {
 
         ID = ORB_ID;
         name = orbString.NAME;
@@ -144,6 +143,6 @@ public class DefaultOrb extends AbstractOrb {
 
     @Override
     public AbstractOrb makeCopy() {
-        return new DefaultOrb();
+        return new AutoTurretOrb();
     }
 }

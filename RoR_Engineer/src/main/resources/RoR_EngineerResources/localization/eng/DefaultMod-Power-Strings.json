@@ -3,6 +3,10 @@
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
 },
+        "RoR_Engineer:MultiTurnBlockPower": {
+                "NAME": "Multi-turn Block",
+                "DESCRIPTIONS": ["Your shield is up for #b", " more turn.", " more turns."]
+        },
 "RoR_Engineer:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]

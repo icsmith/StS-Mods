@@ -7,8 +7,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import RoR_Engineer.RoR_Engineer;
-import RoR_Engineer.characters.TheDefault;
-import RoR_Engineer.orbs.DefaultOrb;
+import RoR_Engineer.characters.The_Engineer;
+import RoR_Engineer.orbs.AutoTurretOrb;
 
 import static RoR_Engineer.RoR_Engineer.makeCardPath;
 
@@ -18,6 +18,8 @@ public class OrbSkill extends AbstractDynamicCard {
      * Orb time.
      *
      * Channel 1 Default Orb.
+     * Todo: Change class name
+     *  Todo: Change rarity
      */
 
     // TEXT DECLARATION
@@ -38,7 +40,7 @@ public class OrbSkill extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_GRAY;
+    public static final CardColor COLOR = The_Engineer.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
 
@@ -53,7 +55,7 @@ public class OrbSkill extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new DefaultOrb())); // Channel a Default Orb.
+        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new AutoTurretOrb())); // Channel a Default Orb.
 
     }
 

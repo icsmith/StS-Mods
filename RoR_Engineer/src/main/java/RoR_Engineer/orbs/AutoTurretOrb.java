@@ -71,6 +71,7 @@ public class AutoTurretOrb extends AbstractOrb {
         } else {
             this.passiveAmount = this.basePassiveAmount;
             this.evokeAmount = this.baseEvokeAmount;
+            this.angle = 0.0F;
         }
 
     }
@@ -88,19 +89,19 @@ public class AutoTurretOrb extends AbstractOrb {
         // For a list of sound effects you can use, look under com.megacrit.cardcrawl.audio.SoundMaster - you can see the list of keys you can use there. As far as previewing what they sound like, open desktop-1.0.jar with something like 7-Zip and go to audio. Reference the file names provided. (Thanks fiiiiilth)
 
     }
-
+//Todo: Fix losing attacks against dead enemies
     @Override
     public void onStartOfTurn() {// 1.At the start of your turn.
         AbstractDungeon.actionManager.addToBottom(// 2.This orb will have a flare effect
                 new VFXAction(new OrbFlareEffect(this, OrbFlareEffect.OrbFlareColor.FROST), 0.1f));
 
-        AbstractDungeon.actionManager.addToBottom(// 3. And attack the weakest enemy.
+        AbstractDungeon.actionManager.addToBottom(// 3. And attack a random enemy
             new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.passiveAmount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
 
-        AbstractDungeon.actionManager.addToBottom(// 3. And attack the weakest enemy.
+        AbstractDungeon.actionManager.addToBottom(// 3.  And attack a random enemy
                 new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.passiveAmount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
 
-        AbstractDungeon.actionManager.addToBottom(// 3. And attack the weakest enemy.
+        AbstractDungeon.actionManager.addToBottom(// 3.  And attack a random enemy
                 new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.passiveAmount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
 
     }
@@ -109,7 +110,7 @@ public class AutoTurretOrb extends AbstractOrb {
     public void updateAnimation() {// You can totally leave this as is.
         // If you want to create a whole new orb effect - take a look at conspire's Water Orb. It includes a custom sound, too!
         super.updateAnimation();
-        angle += Gdx.graphics.getDeltaTime() * 45.0f;
+        //angle += Gdx.graphics.getDeltaTime() * 45.0f;
         vfxTimer -= Gdx.graphics.getDeltaTime();
         if (vfxTimer < 0.0f) {
             AbstractDungeon.effectList.add(new DarkOrbPassiveEffect(cX, cY)); // This is the purple-sparkles in the orb. You can change this to whatever fits your orb.
@@ -124,7 +125,7 @@ public class AutoTurretOrb extends AbstractOrb {
         sb.draw(img, cX - 48.0f, cY - 48.0f + bobEffect.y, 48.0f, 48.0f, 96.0f, 96.0f, scale + MathUtils.sin(angle / PI_4) * ORB_WAVY_DIST * Settings.scale, scale, angle, 0, 0, 96, 96, false, false);
         sb.setColor(new Color(1.0f, 1.0f, 1.0f, this.c.a / 2.0f));
         sb.setBlendFunction(770, 1);
-        sb.draw(img, cX - 48.0f, cY - 48.0f + bobEffect.y, 48.0f, 48.0f, 96.0f, 96.0f, scale, scale + MathUtils.sin(angle / PI_4) * ORB_WAVY_DIST * Settings.scale, -angle, 0, 0, 96, 96, false, false);
+        //sb.draw(img, cX - 48.0f, cY - 48.0f + bobEffect.y, 48.0f, 48.0f, 96.0f, 96.0f, scale, scale + MathUtils.sin(angle / PI_4) * ORB_WAVY_DIST * Settings.scale, -angle, 0, 0, 96, 96, false, false);
         sb.setBlendFunction(770, 771);
         renderText(sb);
         hb.render(sb);

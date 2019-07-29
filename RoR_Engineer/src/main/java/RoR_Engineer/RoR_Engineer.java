@@ -410,6 +410,8 @@ public class RoR_Engineer implements
         BaseMod.addCard(new DefaultRareAttack());
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
+        //custom content under here
+        BaseMod.addCard(new GrenadeLauncher());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -427,6 +429,8 @@ public class RoR_Engineer implements
         UnlockTracker.unlockCard(DefaultRareAttack.ID);
         UnlockTracker.unlockCard(DefaultRareSkill.ID);
         UnlockTracker.unlockCard(DefaultRarePower.ID);
+        //Custom content under here
+        UnlockTracker.unlockCard(GrenadeLauncher.ID);
         
         logger.info("Done adding cards!");
     }

@@ -85,7 +85,7 @@ public class DefaultOrb extends AbstractOrb {
         // The damage matrix is how orb damage all enemies actions have to be assigned. For regular cards that do damage to everyone, check out cleave or whirlwind - they are a bit simpler.
 
 
-        AbstractDungeon.actionManager.addToBottom(new SFXAction("TINGSHA")); // 3.And play a Jingle Sound.
+        AbstractDungeon.actionManager.addToBottom(new SFXAction("CARD_UPGRADE")); // 3.And play a Jingle Sound.
         // For a list of sound effects you can use, look under com.megacrit.cardcrawl.audio.SoundMaster - you can see the list of keys you can use there. As far as previewing what they sound like, open desktop-1.0.jar with something like 7-Zip and go to audio. Reference the file names provided. (Thanks fiiiiilth)
 
     }

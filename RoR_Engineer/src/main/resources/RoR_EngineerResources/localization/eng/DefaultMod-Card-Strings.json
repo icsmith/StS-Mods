@@ -49,5 +49,9 @@
   "RoR_Engineer:OrbSkill": {
     "NAME": "Get Orb",
     "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "RoR_Engineer:GrenadeLauncher": {
+    "NAME": "Grenade Launcher",
+    "DESCRIPTION": "Deal !D! Damage X times."
   }
 }

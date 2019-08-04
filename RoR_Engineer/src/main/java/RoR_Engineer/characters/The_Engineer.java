@@ -170,15 +170,22 @@ public class The_Engineer extends CustomPlayer {
 //
 //        retVal.add(DefaultAttackWithVariable.ID);
 //        retVal.add(DefaultSecondMagicNumberSkill.ID);
-        retVal.add(OrbSkill.ID);
+
         //custom content under here
+
+        retVal.add(PressureMines.ID);
+        retVal.add(PressureMines.ID);
+        retVal.add(PressureMines.ID);
+        retVal.add(PressureMines.ID);
+        retVal.add(PressureMines.ID);
+        retVal.add(PersonalShieldGenerator.ID);
+        retVal.add(PersonalShieldGenerator.ID);
+        retVal.add(PersonalShieldGenerator.ID);
+        retVal.add(PersonalShieldGenerator.ID);
+        retVal.add(PersonalShieldGenerator.ID);
         retVal.add(GrenadeLauncher.ID);
         retVal.add(BubbleShield.ID);
-        retVal.add(PressureMines.ID);
-        retVal.add(PressureMines.ID);
-        retVal.add(PressureMines.ID);
-        retVal.add(PressureMines.ID);
-        retVal.add(PressureMines.ID);
+        retVal.add(ConstructAutoTurret.ID);
 
         return retVal;
     }

@@ -12,7 +12,7 @@ import RoR_Engineer.orbs.AutoTurretOrb;
 
 import static RoR_Engineer.RoR_Engineer.makeCardPath;
 
-public class OrbSkill extends AbstractDynamicCard {
+public class ConstructAutoTurret extends AbstractDynamicCard {
 
     /*
      * Orb time.
@@ -24,7 +24,7 @@ public class OrbSkill extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = RoR_Engineer.makeID(OrbSkill.class.getSimpleName());
+    public static final String ID = RoR_Engineer.makeID(ConstructAutoTurret.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("TR12_Gauss_Auto-Turret.png");
@@ -47,7 +47,7 @@ public class OrbSkill extends AbstractDynamicCard {
 
     // /STAT DECLARATION/
 
-    public OrbSkill() {
+    public ConstructAutoTurret() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
 
     }

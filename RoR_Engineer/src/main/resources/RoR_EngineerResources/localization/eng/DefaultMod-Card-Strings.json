@@ -46,7 +46,7 @@
     "NAME": "Cool 2 Number Card",
     "DESCRIPTION": "Apply !M! vulnerable and !RoR_Engineer:SecondMagic! poison to an enemy."
   },
-  "RoR_Engineer:OrbSkill": {
+  "RoR_Engineer:ConstructAutoTurret": {
     "NAME": "Construct Auto Turret",
     "DESCRIPTION": "Channel 1 Auto Turret.",
     "UPGRADE_DESCRIPTION": "Channel 1 Auto Turret. NL Increase base damage by 1."
@@ -58,6 +58,10 @@
   "RoR_Engineer:PressureMines": {
     "NAME": "Pressure Mine",
     "DESCRIPTION": "If enemy does not intend to attack, Deal !D! damage. NL OR NL Apply !M! thorns for one turn."
+  },
+  "RoR_Engineer:PersonalShieldGenerator": {
+    "NAME": "Personal Shield Generator",
+    "DESCRIPTION": "Gain !B! block."
   },
   "RoR_Engineer:BubbleShield": {
     "NAME": "Bubble Shield",

@@ -402,9 +402,9 @@ public class RoR_Engineer implements
         BaseMod.addCard(new GrenadeLauncher());
         BaseMod.addCard(new BubbleShield());
         BaseMod.addCard(new PressureMines());
-        logger.info("Added newest card, pressure mines");
+        BaseMod.addCard(new PersonalShieldGenerator());
 
-        BaseMod.addCard(new OrbSkill());
+        BaseMod.addCard(new ConstructAutoTurret());
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());
         BaseMod.addCard(new DefaultCommonAttack());
         BaseMod.addCard(new DefaultAttackWithVariable());
@@ -422,7 +422,7 @@ public class RoR_Engineer implements
         // Unlock the cards
         // This is so that they are all "seen" in the library, for people who like to look at the card list
         // before playing your mod.
-        UnlockTracker.unlockCard(OrbSkill.ID);
+        UnlockTracker.unlockCard(ConstructAutoTurret.ID);
         UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
         UnlockTracker.unlockCard(DefaultCommonAttack.ID);
         UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);

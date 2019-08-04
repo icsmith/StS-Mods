@@ -55,6 +55,10 @@
     "NAME": "Grenade Launcher",
     "DESCRIPTION": "Deal !D! damage to ALL enemies X times."
   },
+  "RoR_Engineer:PressureMines": {
+    "NAME": "Pressure Mine",
+    "DESCRIPTION": "If enemy does not intend to attack, Deal !D! damage. NL OR NL Apply !M! thorns for one turn."
+  },
   "RoR_Engineer:BubbleShield": {
     "NAME": "Bubble Shield",
     "DESCRIPTION": "Gain !B! block for 3 turns."

@@ -34,7 +34,7 @@ public class GrenadeLauncher extends AbstractDynamicCard {
     private static final int COST = -1;  // COST = X
     private static final int UPGRADED_COST = -1; // UPGRADED_COST = X
 
-    private static final int DAMAGE = 5;    // DAMAGE = 6
+    private static final int DAMAGE = 3;    // DAMAGE = 6
     private static final int UPGRADE_PLUS_DMG = 3;  // UPGRADE_PLUS_DMG = 2
 
     // /STAT DECLARATION/

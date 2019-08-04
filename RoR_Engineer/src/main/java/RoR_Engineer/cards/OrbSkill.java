@@ -31,6 +31,7 @@ public class OrbSkill extends AbstractDynamicCard {
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -55,7 +56,7 @@ public class OrbSkill extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new AutoTurretOrb())); // Channel a Default Orb.
+        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new AutoTurretOrb(this.upgraded))); // Channel a Default Orb.
 
     }
 
@@ -64,6 +65,7 @@ public class OrbSkill extends AbstractDynamicCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
     }

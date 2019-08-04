@@ -397,7 +397,13 @@ public class RoR_Engineer implements
         // Add the cards
         // Don't comment out/delete these cards (yet). You need 1 of each type and rarity (technically) for your game not to crash
         // when generating card rewards/shop screen items.
-        
+
+        //custom content under here
+        BaseMod.addCard(new GrenadeLauncher());
+        BaseMod.addCard(new BubbleShield());
+        BaseMod.addCard(new PressureMines());
+        logger.info("Added newest card, pressure mines");
+
         BaseMod.addCard(new OrbSkill());
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());
         BaseMod.addCard(new DefaultCommonAttack());
@@ -410,9 +416,7 @@ public class RoR_Engineer implements
         BaseMod.addCard(new DefaultRareAttack());
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
-        //custom content under here
-        BaseMod.addCard(new GrenadeLauncher());
-        BaseMod.addCard(new BubbleShield());
+
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -433,6 +437,7 @@ public class RoR_Engineer implements
         //Custom content under here
         UnlockTracker.unlockCard(GrenadeLauncher.ID);
         UnlockTracker.unlockCard(BubbleShield.ID);
+        UnlockTracker.unlockCard(PressureMines.ID);
         
         logger.info("Done adding cards!");
     }

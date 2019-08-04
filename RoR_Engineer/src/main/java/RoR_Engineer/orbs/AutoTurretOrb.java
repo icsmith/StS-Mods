@@ -41,14 +41,14 @@ public class AutoTurretOrb extends AbstractOrb {
     private static final float PI_4 = 12.566371f;
 
     //Todo: Upgrade base damage with upgraded skill card
-    public AutoTurretOrb() {
+    public AutoTurretOrb(boolean upgraded) {
 
         ID = ORB_ID;
         name = orbString.NAME;
         img = IMG;
 
         evokeAmount = baseEvokeAmount = 1;
-        passiveAmount = basePassiveAmount = 1;
+        passiveAmount = basePassiveAmount = upgraded ? 2: 1;
 
         updateDescription();
 
@@ -144,6 +144,6 @@ public class AutoTurretOrb extends AbstractOrb {
 
     @Override
     public AbstractOrb makeCopy() {
-        return new AutoTurretOrb();
+        return new AutoTurretOrb(basePassiveAmount>1);
     }
 }
